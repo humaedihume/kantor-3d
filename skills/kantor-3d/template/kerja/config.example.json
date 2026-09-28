@@ -1,0 +1,14 @@
+{
+  "project": "Nama Project",
+  "host": "",
+  "public_url": "",
+  "auto": true,
+  "max_desks": 6,
+  "hide": ["statusline-setup"],
+  "roles": [
+    { "key": "analyst", "name": "Pingot", "role": "Analyst", "asks_user": true },
+    { "key": "developer", "name": "Zaki", "role": "Developer", "color": "#2f9a6d" },
+    { "key": "qa", "name": "Lulu", "role": "QA", "screen": "evidence" }
+  ],
+  "orchestrator": { "name": "Risko", "role": "Orkestrator" }
+}

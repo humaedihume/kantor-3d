@@ -1,0 +1,72 @@
+{
+  "_catatan": "Aturan penemuan peran otomatis — dibaca sama persis oleh server PHP (src/*.php) dan Node (node/*.mjs). Ubah di sini, bukan di kode.",
+  "max_desks": 6,
+  "window_days": 7,
+  "generic_types": ["general-purpose", "claude", "explore", "plan"],
+  "builtin_types": ["general-purpose", "explore", "plan", "claude", "statusline-setup", "claude-code-guide", "output-style-setup"],
+  "vocabulary": [
+    "analyst", "developer", "developer-senior", "developer-junior", "qa", "devops",
+    "editor", "penulis", "pemeriksa-fakta",
+    "peneliti", "analis-data", "penyunting",
+    "pemantau", "pelapor"
+  ],
+  "aliases": {
+    "analis": "analyst",
+    "dev": "developer",
+    "dev-senior": "developer-senior",
+    "dev-junior": "developer-junior",
+    "senior": "developer-senior",
+    "junior": "developer-junior",
+    "tester": "qa",
+    "writer": "penulis",
+    "fact-checker": "pemeriksa-fakta",
+    "researcher": "peneliti",
+    "data-analyst": "analis-data",
+    "monitor": "pemantau",
+    "reporter": "pelapor"
+  },
+  "names": {
+    "analyst": "Analyst",
+    "developer": "Developer",
+    "developer-senior": "Dev Senior",
+    "developer-junior": "Dev Junior",
+    "qa": "QA",
+    "devops": "DevOps",
+    "general-purpose": "Agen Umum",
+    "explore": "Penjelajah",
+    "plan": "Perencana",
+    "claude": "Claude",
+    "statusline-setup": "Statusline",
+    "claude-code-guide": "Pemandu",
+    "output-style-setup": "Gaya Output"
+  },
+  "acronyms": ["qa", "ui", "ux", "api", "sre", "pm", "seo", "db", "ai", "ml", "cli", "ci", "cd"],
+  "order": [
+    "analyst", "editor", "peneliti", "pemantau",
+    "developer", "developer-senior", "developer-junior", "penulis", "analis-data",
+    "qa", "pemeriksa-fakta", "penyunting", "pelapor", "devops"
+  ],
+  "source_labels": {
+    "config": "Peran",
+    "agent-file": "Agent project",
+    "builtin": "Agent bawaan",
+    "transcript": "Agent",
+    "prefix": "Peran"
+  },
+  "color_names": {
+    "blue": "#3f6fd1",
+    "green": "#2f9a6d",
+    "orange": "#d9772f",
+    "pink": "#c2417a",
+    "cyan": "#0f8fa3",
+    "yellow": "#9a7418",
+    "red": "#b8452f",
+    "purple": "#6a55c9"
+  },
+  "preset_colors": {
+    "analyst": "#3f6fd1",
+    "developer": "#2f9a6d",
+    "qa": "#d9772f"
+  },
+  "palette": ["#3f6fd1", "#2f9a6d", "#d9772f", "#c2417a", "#0f8fa3", "#9a7418", "#b8452f", "#4f7d3a", "#8a4fa8", "#3d7f9e"]
+}

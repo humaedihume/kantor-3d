@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "kantor-3d",
+  "description": "Marketplace untuk plugin Kantor 3D — visualisasi 3D agent Claude Code sebuah project.",
+  "owner": { "name": "sambu-la", "url": "https://github.com/sambu-la" },
+  "plugins": [
+    {
+      "name": "kantor-3d",
+      "source": ".",
+      "description": "Kantor 3D (three.js) di <host>/kerja yang menampilkan agent Claude Code sebuah project bekerja atau istirahat dari transkrip nyata.",
+      "category": "productivity",
+      "tags": ["subagents", "dashboard", "three.js", "visualization"]
+    }
+  ]
+}

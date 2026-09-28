@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "kantor-3d",
+  "displayName": "Kantor 3D",
+  "version": "1.0.0",
+  "description": "Kantor 3D (three.js) di <host>/kerja yang menampilkan agent Claude Code sebuah project bekerja atau istirahat dari transkrip nyata — tanpa konfigurasi, PHP ≥ 8.1 atau Node ≥ 18.",
+  "author": { "name": "sambu-la", "url": "https://github.com/sambu-la" },
+  "homepage": "https://github.com/sambu-la/kantor-3d#readme",
+  "repository": "https://github.com/sambu-la/kantor-3d",
+  "license": "MIT",
+  "keywords": ["claude-code", "subagents", "dashboard", "three.js", "visualization", "monitoring", "indonesia"]
+}

@@ -1,0 +1,11 @@
+{
+  "project": "Nama Project",
+  "roles": [
+    { "key": "analyst", "name": "Pingot", "role": "Analyst", "asks_user": true },
+    { "key": "developer-senior", "name": "Bima", "role": "Dev Senior" },
+    { "key": "developer-junior", "name": "Dewi", "role": "Dev Junior", "look": { "hairStyle": "bun", "glasses": true } },
+    { "key": "qa", "name": "Lulu", "role": "QA" },
+    { "key": "devops", "name": "Raka", "role": "DevOps", "aliases": ["infra"] }
+  ],
+  "orchestrator": { "name": "Risko", "role": "Orkestrator" }
+}
