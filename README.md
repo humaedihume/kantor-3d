@@ -5,7 +5,7 @@
 > sits at a desk and works, waits, or takes a break — driven only by real data (the project's Claude Code transcripts
 > in `~/.claude/projects`, plus `planning/` and `git log` when present). Runs on PHP ≥ 8.1 **or** Node ≥ 18 (Valet,
 > `php -S`, Node, Nginx), optional public tunnel via cloudflared. Install with
-> `/plugin marketplace add sambu-la/kantor-3d` → `/plugin install kantor-3d@kantor-3d`, then run
+> `/plugin marketplace add humaedihume/kantor-3d` → `/plugin install kantor-3d@kantor-3d`, then run
 > `/kantor-3d:kantor-3d` in your project. The UI and docs are in Bahasa Indonesia. MIT licensed.
 
 ![Kantor 3D — tim sedang bekerja](docs/kantor-desktop.webp)
@@ -16,7 +16,7 @@ keputusanmu — semuanya dari **data nyata**, tanpa login dan tanpa konfigurasi.
 dikerjakan lewat Claude Code: aplikasi, konten, riset, sampai job terjadwal `claude -p`.
 
 Ingin sekalian membentuk **tim agent** (Analyst → Developer → QA, dll.) dengan alur rancang → kerjakan → review?
-Pakai plugin saudaranya, [**claude-tim-ai-3D**](https://github.com/sambu-la/claude-tim-ai-3D) — ia memasang Kantor 3D
+Pakai plugin saudaranya, [**claude-tim-ai-3D**](https://github.com/humaedihume/claude-tim-ai-3D) — ia memasang Kantor 3D
 ini otomatis sebagai dependensi.
 
 ## Daftar isi
@@ -58,11 +58,11 @@ ini otomatis sebagai dependensi.
 ## Mulai cepat (plugin)
 Di Claude Code (sesi mana pun):
 ```text
-/plugin marketplace add sambu-la/kantor-3d
+/plugin marketplace add humaedihume/kantor-3d
 /plugin install kantor-3d@kantor-3d
 /reload-plugins
 ```
-Atau dari terminal: `claude plugin marketplace add sambu-la/kantor-3d && claude plugin install kantor-3d@kantor-3d`.
+Atau dari terminal: `claude plugin marketplace add humaedihume/kantor-3d && claude plugin install kantor-3d@kantor-3d`.
 
 Lalu buka Claude Code **di folder project yang ingin dipantau** dan jalankan:
 ```text
@@ -77,7 +77,7 @@ Hasilnya: folder `kerja/` di project, server berjalan di background, dan URL sep
 ## Pasang manual
 Tanpa sistem plugin — skill biasa bernama `/kantor-3d`:
 ```bash
-git clone https://github.com/sambu-la/kantor-3d.git
+git clone https://github.com/humaedihume/kantor-3d.git
 # untuk semua project (skill personal):
 mkdir -p ~/.claude/skills && cp -R kantor-3d/skills/kantor-3d ~/.claude/skills/
 # …atau hanya untuk satu project:
@@ -90,7 +90,7 @@ ln -s "$PWD/kantor-3d/skills/kantor-3d" ~/.claude/skills/kantor-3d
 Buka sesi Claude Code baru, lalu jalankan `/kantor-3d` di folder project.
 
 > Catatan: jangan memasang versi plugin **dan** versi manual bersamaan — keduanya akan tampil (`/kantor-3d:kantor-3d`
-> dan `/kantor-3d`). Pilih salah satu. Pemakai [tim-ai](https://github.com/sambu-la/claude-tim-ai-3D) tidak perlu
+> dan `/kantor-3d`). Pilih salah satu. Pemakai [tim-ai](https://github.com/humaedihume/claude-tim-ai-3D) tidak perlu
 > memasang plugin ini terpisah: `tim-ai@claude-tim-ai-3D` sudah memasang `kantor-3d@claude-tim-ai-3D` sebagai dependensi.
 
 ## Contoh pemakaian (langkah demi langkah)
@@ -257,12 +257,12 @@ Cari prosesnya dengan `lsof -iTCP:8787 -sTCP:LISTEN`.
 - Satu `/kerja` per domain. Antarmuka berbahasa Indonesia.
 
 ## Kontribusi
-Issue dan pull request dipersilakan di [github.com/sambu-la/kantor-3d](https://github.com/sambu-la/kantor-3d).
+Issue dan pull request dipersilakan di [github.com/humaedihume/kantor-3d](https://github.com/humaedihume/kantor-3d).
 - Logika server ada di **dua** runtime: ubah `src/*.php` **dan** `node/*.mjs`, lalu jalankan
   `node kerja/bin/parity.mjs` (harus `PARITY OK`) dan `node kerja/bin/check.mjs <url>` di project uji.
 - Validasi plugin: `claude plugin validate .` dan `claude plugin validate --strict skills`.
 - Jangan pernah menyertakan transkrip, path, atau data project nyata di contoh/tangkapan layar.
 
 ## Lisensi
-[MIT](LICENSE) © sambu-la. Komponen pihak ketiga yang disertakan (three.js r170 — MIT, marked — MIT,
+[MIT](LICENSE) © humaedihume. Komponen pihak ketiga yang disertakan (three.js r170 — MIT, marked — MIT,
 DOMPurify — Apache-2.0/MPL-2.0) tercantum di [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
